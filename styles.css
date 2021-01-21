@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: fantasy, arial;
+}
+header {
+    background-color: powderblue;
+    padding: 1rem;
+    border: solid pink 1rem;
+    width: 40rem;
+    margin: auto;
+}
+
+h1 {
+  color: slateblue;     
+}
+a {
+    text-decoration: none;
+    color: mediumvioletred;
+    padding-right: 2rem;
+}
+img {
+    margin-left: 10rem;
+    border: dashed pink 1rem;
+}
+table {
+    margin: auto;
+    border: solid aliceblue 2rem;
+}
+td {
+    padding: 0.5rem;
+}
+
+th {
+    text-decoration: underline;
+    color: salmon;
+}
