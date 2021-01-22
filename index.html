@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website Verena Isele</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+<!--Kopf - Navigation-->
     <header>
         <h1>Verena Isele</h1>
         <nav>
            <a href="#Kontakt">Kontakt</a>
            <a href="#Biographie">Biographie</a>
+           <a href="blog.html">Blog</a>
+           <a href="backen.html">Backen</a>
         </nav>
     </header>
 
     <main>
-
+<!--vorstellung - über mich-->
         <section>
             <h2>Darf ich mich vorstellen?</h2>
             <img src="images/Bild_Slack_geschnitten.jpg" alt="Profilbild" width="300">
@@ -44,6 +47,9 @@
                 </ul>
         </section>
         <hr>
+
+        <!--Kontaktaufnahme-->
+
         <section>
             <h2 id="Kontakt">Kontaktinformationen</h2>
             <p>Telefon:</p>
@@ -59,7 +65,7 @@
                     </li>
                     <li>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Black-Large.png" alt="Logo Codepen" width="50">
-                        <a href="https://codepen.io/your-work/">Codepen</a>
+                        <a href="https://codepen.io/your-work/"><img src="images/logo_codepen_transparent.png" alt="" width="50"></a>
                     </li>
                 </ul>
             </p>
@@ -87,11 +93,15 @@
 
 
         <hr>
+
+<!-- Biographie -->
         <section>
             <h2 id="Biographie">Biographie</h2>
             <p>Bla bla bla</p>
         </section>
 
+
+<!--Lebenslauf-->
         <section>
             <table>
                 <thead>
@@ -115,6 +125,18 @@
                 </tbody>
             </table>
 
+        </section>
+
+        <!--Umfrage an User-->
+        <section>
+        <form method="post">
+            <fieldset>
+              <legend>Welchen Bereich meiner Webseite mögt Ihr am Liebsten?</legend>
+              <label><input type="radio" name="radio"> Biographie</label>
+              <label><input type="radio" name="radio"> Blog</label>
+              <label><input type="radio" name="radio"> Backen</label>
+            </fieldset>
+          </form>
         </section>
 
     </main>
