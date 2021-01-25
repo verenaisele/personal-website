@@ -1,59 +1,106 @@
-/*Allgemeine Settings*/
+/*Allgmeine Einstellungen*/
+
 * {
     box-sizing: border-box;
+  }
+  
+  body {
     margin: 0;
-}
-
-body {
-    body {
-        font-size: 112.5%;
-        font-family: fantasy, sans-serif;
-       /* min-height: 100vh;
-        display: grid;
-        grid-template-rows: auto 1fr auto;*/
-    
-    /*font-size: 100%;
-    font-family: sans-serif;
-    min-height: 100vh;
-
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr auto 1fr;*/
-
-}
-/* Kopf und Navigation */
-header {
-    background-color: powderblue;
-    padding: 1rem;
-    border: solid pink 1rem;
-    width: 40rem;
-    margin: auto;
-}
-
-h1 {
-  color: slateblue;     
-}
-.navlink {
+  }
+  
+  /*Typographie*/
+  body {
+    font-family: arial;
+    line-height: 1.5;
+  }
+  h1 {
+    font-size: 2.5 rem;
+  }
+  h2{
+    font-size: 1.75 rem;
+    color: #ffbf00;
+  }
+  h3 {
+    font-size: 1.5 rem;
+  }
+  
+  /*Colors*/
+  /*header*/
+  header {
+    background-color: #ffbf00;
+    color: #fff;
+  }
+  
+  .nav-item {
     text-decoration: none;
-    color: mediumvioletred;
-    padding-right: 2rem;
-}
-
-
-table {
-    margin: auto;
-    border: solid aliceblue 2rem;
-}
-td {
-    padding: 0.5rem;
-}
-
-th {
-    text-decoration: underline;
-    color: salmon;
-}
-
-footer {
-    background-color:blue;
-    margin-top: auto;
-}
+    color: #fff;
+    font-weight: bold;
+  }
+  /*intro*/
+  .foto_gesamt {
+    background-color: white;
+    color: black;
+  }
+  /*cv*/
+  .cv {
+    color: black;
+    border-bottom: #ffbf00 solid 0.25rem;
+  }
+  /*footer*/
+  footer {
+    background-color: #ffbf00;
+    color: #fff;
+  }
+  
+  /*Layout*/
+  /*header*/
+  header {
+    text-align: center;
+    padding: 1rem;
+  }
+  .nav-item {
+  margin: 0 2rem;
+  }
+  
+  /*Intro Foto und Interessen*/
+  .foto_gesamt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2fr;
+  }
+  .fototext {
+    grid-column: 1/3;
+  }
+  .interest {
+    grid-column: 3/4;
+    grid-row: 1;
+  }
+  .skills {
+    grid-column: 3/4;
+    grid-row: 2;
+  }
+  
+  /*Lebenslauf*/
+  .cv {
+    display: flex;
+  }
+  .cv_year {
+    margin-right: 1.5rem;
+  }
+  /*Kontakt*/
+  textarea {
+    padding: 1rem;
+    line-height: 1.5;
+    border: 2px solid #ffbf00;
+    box-shadow: 1px 1px 1px #c29102;
+    font-family: arial;
+  }
+  
+  /*footer*/
+  footer {
+  padding: 1rem;
+  }
+  
+  /*TESTS MIT GRID*/
+  

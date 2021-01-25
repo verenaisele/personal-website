@@ -1,152 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website Verena Isele</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webseite Verena Isele</title>
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body>
-<!--Kopf - Navigation-->
-    <header>
-        <h1>Verena Isele</h1>
-        <nav>
-           <a class="navlink" href="#Kontakt">Kontakt</a>
-           <a class="navlink" href="#Biographie">Biographie</a>
-           <a class="navlink" href="blog.html">Blog</a>
-           <a class="navlink" href="backen.html">Backen</a>
-        </nav>
-    </header>
+<body>  
 
-    <main>
-<!--vorstellung - über mich-->
-        <section>
-            <h2>Darf ich mich vorstellen?</h2>
-            <img src="images/Bild_Slack_geschnitten.jpg" alt="Profilbild" width="300">
-            <p>Das bin ich</p>
-        </section>
+<!--Kopf ganze Breite, background-color-->
+<header>
+  
+  <!--Navigation zu Elementen via Link-->
+  <nav>
+     <a href="#contact" class="nav-item">Kontakt</a>
+    <a href="#bio" class="nav-item">Biographie</a>
+    <a href="blog.html" class="nav-item">Blog</a>
+  </nav>
+  
+  <!--Übershchrift 1-->
+  <h1>Verena Isele</h1>
+</header>
 
-        <section>
-            <h2>Meine Interessen</h2>
-                <ul>
-                    <li>Lesen</li>
-                    <li>Sport</li>
-                    <li>Wandern</li>
-                    <li>Backen</li>
-                </ul>
-        </section>
+<!--Inhalt-->
+<main>
+  
+  <!--Foto, Text zu mir /Interssen und Skills-->
+<section class="foto_gesamt">
+    
+    <!--Foto und Text-->
+    <div class="foto">
+      <img src="images/Foto_cas.jpg" alt="Verena Isele Profilbild" width="100">
+    </div>
+  
+  <div class="fototext">
+      <p>Hallo, ich heiße Verena Isele. Herzlich willkommen auf meiner Webseite!</p>
+    </div>
+    
+    <!--Interessen-->
+    <div class="interest">
+        <h3>Meine Interessen</h3>
+        <ul>
+          <li>Outdoor Functional Fitness</li>
+          <li>Lesen</li>
+          <li>Backen</li>
+        </ul>
+    </div>
+    
+    <!--Skills-->
+    <div class="skills">
+      <h3>Meine Fähigkeiten</h3>
+        <ul>
+          <li>Translation Memory Systeme</li>
+          <li>Sprachen</li>
+          <li>HTML und CSS</li>
+      </ul>
+     </div>
+ 
+  </section>  <!-- / intro-->
+  
+  <!--Biographie Block unter intro-->
+  <div class="biographie">
+    <h2 id="bio">Biographie</h2> <!-- LINK zu nav-->
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora molestiae neque ipsam qui vero? Libero quibusdam ab repudiandae saepe perspiciatis recusandae fugit ullam illo quae ipsum? Repellendus eum qui nesciunt quasi deleniti ut adipisci animi, fugit dolorum tempora reiciendis laudantium facilis modi assumenda odio minus voluptas dolore commodi illum! Error.
+      
+    </p>
+    
+  </div> <!-- /biographie-->
+  
+  <!--Kontaktaufnahme 3 Spalten-->
+  <div class="kontakte">
+    <h2 id="contact">So könnt ihr mich erreichen:</h2>
+    
+    <!--Kontaktspalte 1/ Telefonnr und E-Mail-->
+    <div class="kontakt">
+      <h3>Klassisch</h3>
+        <p>
+        <ul>
+          <li>Telefon: 0711/29884873</li>
+          <li>Mail: maxi.musterfrau@web.de</li>
+        </ul>
+        </p>
+    </div>
+    
+    <!--Kontaktspalte 2 / Kommentarfeld--> 
+    <div class="kontakt">
+      <h3>Direkt</h3>
+      <p>
+      <label for="comment">Hinterlasst mir gerne einen Kommentar:</label>
+        <br>
+      <textarea class="com_text" name="comment"
+                rows="5" cols="50">
+      </textarea>
+      </p>
+    </div>
+    
+    <!--Kontaktspalte 3 / Link auf Logo/ Github+Codepen Link /Link zu Profil ergänzen bei Linkedin und Xing-->
+    <div class="kontakt">
+      <h3>Social</h3>
+      
+        <a href="https://github.com/verenaisele?tab=repositories" target="blank">
+          <img src="images/logo_github_transparent.png" alt="Github Logo" width="50" height="50">
+        </a>
+   
+        <a href="https://codepen.io/your-work" target="blank">
+          <img scr="images/logo_codepen_transparent.png" alt="Codepen Logo" width="50" height="50">
+        </a>
+        
+        <a href="https://www.linkedin.com/" target="blank">
+          <img src="images/logo_linkedin_trans.jpg" alt="LinkedIn Logo" width="50" height="50">
+        </a>
+      
+        <a href="https://www.xing.com/" target="blank">
+          <img src="images/logo_xing_trans.jpg" alt="Xing Logo" width="50" height="50">
+        </a>
+      
+    </div>
+    
+  </div> <!-- /kontakte-->
+  
+<!--Lebenslauf Tabelle mit 2 Spalten-->
+<br>
+<h2>Lebenslauf</h2>
+ <section class="cv">
+    
+    <!-- Spalte 1 CV / Jahr-->
+    <div class="cv_year">
+      <h3>Jahr</h3>
+      <p>2019-2020</p>
+      <p>2016-2019</p>
+      <p>2010-2016</p>
+    </div>
+    
+    <!-- Spalte 2 CV / Aufgabe-->
+    <div class="cv_task">
+      <h3>Aufgaben</h3>
+      <p>Product Quality Managerin bei PONS GmbH</p>
+      <p>Projektmanagerin für Übersetzungsprojekte bei beo mbH</p>
+      <p>Mitarbeiterin für Support und Training für <abbr title="Translation Memory Systeme">TMS</abbr> bei zaac - Angelika Zerfaß</p>
+    </div>
+  
+   </section>  <!-- /cv-->
+  
+<!--Newsletter-Formular-->
+    <section class="newsletter">
+      <h2>Newsletter</h2>
+      <p>Wenn du von mir auf dem Laufenden gehalten werden möchtest, dann abnonniere sehr gerne meinen wöchentlichen Newsletter:</p>
+      <p>
+      <form action=""> <!--Servername einfügen-->
+        
+        <div class="form_part">
+          <label for="Name">Name:
+            <input type="text" name="Name" required> 
+            </label>
+         </div>
+        
+        <div class="form_part">
+          <label for="email">E-Mail-Adresse:
+          <input type="text" name="email" required> 
+          </label>
+        </div>
+        
+        <div class="form-example">
+          <input type="submit" value="Subscribe!">
+        </div>
+        
+        </form>
+      </p>
+    </section> <!--/newsletter-->
 
-        <section>
-            <h2>Meine Skills</h2>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-        </section>
-        <hr>
+</main>
 
-        <!--Kontaktaufnahme-->
-
-        <section>
-            <h2 id="Kontakt">Kontaktinformationen</h2>
-            <p>Telefon:</p>
-            <p>E-Mail:</p>
-        </section>
-
-        <section>
-            <h2>Schauen Sie sich gerne meine bisherigen Arbeiten an:</h2>
-            <p>
-                <ul>
-                    <li>
-                        <a class="logo" href="https://github.com/verenaisele" target="blank">
-                            <img src="images/logo_github_transparent.png" alt="" width="50">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="logo" href="https://codepen.io/your-work/" target="blank">
-                            <img src="images/logo_codepen_transparent.png" alt="" width="50">
-                        </a>
-                    </li>
-                </ul>
-            </p>
-        </section>
-
-        <section>
-            <h2>Hinterlasse mir gerne einen Kommentar</h2>
-            <textarea name="Kommentar" id="" cols="30" rows="10"></textarea>
-            <p>
-            <button>Senden</button>
-            </p>
-        </section>
-
-        <section>
-            <h2>oder abnonniere meinen Newsletter</h2>
-            <form action=""></form>
-            <label for="email">Deine E-Mail-Adresse</label>
-            <input type="text" name="email">
-            <input type="checkbox" name="email" checked>
-            <p>Ich möchte den Newsletter täglich erhalten</p>
-            <p>
-                <button>Senden</button>
-                </p>
-        </section>
-
-
-        <hr>
-
-<!-- Biographie -->
-        <section>
-            <h2 id="Biographie">Biographie</h2>
-            <p>Bla bla bla</p>
-        </section>
-
-
-<!--Lebenslauf-->
-        <section>
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="2">Curriculum</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Jahr</td>
-                        <td>Tätigkeit</td>
-                    </tr>
-                    <tr>
-                        <td>2021</td>
-                        <td>Bootcamp</td>
-                    </tr>
-                    <tr>
-                        <td>2019</td>
-                        <td>Produktmanagerin</td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </section>
-
-        <!--Umfrage an User-->
-        <section>
-        <form method="post">
-            <fieldset>
-              <legend>Welchen Bereich meiner Webseite mögt Ihr am Liebsten?</legend>
-              <label><input type="radio" name="radio"> Biographie</label>
-              <label><input type="radio" name="radio"> Blog</label>
-              <label><input type="radio" name="radio"> Backen</label>
-            </fieldset>
-          </form>
-        </section>
-
-    </main>
-
-    <footer>
-<p>&copy;Verena Isele 2021</p>
-    </footer>
+<!--Ende der Seite / Copyright Link nach oben-->
+<footer>
+  &copy; Verena Isele, Stuttgart 2021
+</footer>
 
 </body>
 </html>
