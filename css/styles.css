@@ -5,13 +5,23 @@
 }
 
 body {
+    body {
+        font-size: 112.5%;
+        font-family: fantasy, sans-serif;
+       /* min-height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr auto;*/
+    
+    /*font-size: 100%;
     font-family: sans-serif;
-    display: grid;
     min-height: 100vh;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: auto 1fr;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr auto 1fr;*/
 
 }
+/* Kopf und Navigation */
 header {
     background-color: powderblue;
     padding: 1rem;
@@ -23,15 +33,13 @@ header {
 h1 {
   color: slateblue;     
 }
-a {
+.navlink {
     text-decoration: none;
     color: mediumvioletred;
     padding-right: 2rem;
 }
-img {
-    margin-left: 10rem;
-    border: dashed pink 1rem;
-}
+
+
 table {
     margin: auto;
     border: solid aliceblue 2rem;
