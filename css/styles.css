@@ -37,7 +37,7 @@ header {
   font-weight: bold;
 }
 /*intro*/
-.foto_gesamt {
+.intro {
   background-color: white;
   color: black;
   border-bottom: #ffbf00 solid 0.25rem;
@@ -70,7 +70,7 @@ main {
 
 /*Intro Foto und Interessen*/
 @media (min-width: 500px) {
-.foto_gesamt {
+.intro {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
